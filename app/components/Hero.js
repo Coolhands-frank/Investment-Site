@@ -10,7 +10,7 @@ export default function Hero(){
 
             <div className="relative z-3 px-8 lg:px-20 pt-12 md:pt-20 pb-28 md:pb-44 lg:pb-56 flex flex-col md:flex-row lg:justify-between items-center lg:space-x-2">
                 <div className="lg:w-2/3 md:mr-4 text-white flex flex-col">
-                    <div className="tracking-normal md:tracking-wide font-bold leading-tight md:leading-tight lg:leading-snug text-3xl md:text-4xl lg:text-6xl">
+                    <div className="tracking-normal md:tracking-wide font-bold leading-tight md:leading-tight lg:leading-snug text-4xl lg:text-6xl">
                         <h1 className="capitalize ">Preserving your finances for a better future</h1>
                     </div>
                     <div className={`${plus_jakarta_sans.className} mt-2 mb-4 md:mt-4 md:mb-8 lg:mt-8 lg:mb-14`}>
