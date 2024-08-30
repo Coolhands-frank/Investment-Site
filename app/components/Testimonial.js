@@ -6,7 +6,7 @@ export default function Testimonial() {
         <main className="py-24 px-4 bg-gray-100 flex flex-col items-center justify-center">
             <div className="max-w-lg max-h-44 flex flex-col items-center text-center justify-center">
                 <h1 className="mb-8 font-bold text-5xl md:text-6xl capitalize">What they say</h1>
-                <p classNaem={`${plus_jakarta_sans.className} text-sm md:text-base font-normal`}>
+                <p className={`${plus_jakarta_sans.className} text-sm md:text-base font-normal`}>
                     Li Europan lingues es membres del sam familie. Lor separat 
                     existentie es un myth. Por scientie, musica, sport etc, 
                     litot Europa usa li sam vocabular.
