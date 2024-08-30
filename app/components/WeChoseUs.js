@@ -21,12 +21,13 @@ export default function WeChoseUs () {
         if (imageRef.current) {
           observer.observe(imageRef.current);
         }
-    
+    /*
         return () => {
           if (imageRef.current) {
             observer.unobserve(imageRef.current);
           }
         };
+    */
       }, []);
 
     return (
