@@ -47,7 +47,7 @@ export default function OurTeam() {
                         <div className="w-28 self-center h-20 md:w-64 lg:w-auto md:h-36 bg-green-600 rounded-2xl bg-cover bg-center" style={{ backgroundImage: "url('/images/eillish.jpeg')" }}></div>
                         <div className="self-center mt-6">
                             <h1 className="font-bold text-base md:text-xl">Dinma Elendu</h1>
-                            <p className={`${plus_jakarta_sans.className} mt-2 text-center text-sm md:text-base font-light`}>consultant</p>
+                            <p className={`${plus_jakarta_sans.className} mt-2 text-center text-sm md:text-base font-light`}>Consultant</p>
                         </div> 
                     </div>
 

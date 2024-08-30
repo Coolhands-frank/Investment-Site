@@ -31,7 +31,7 @@ export default function Testimonial() {
                 <div className="bg-white absolute flex justify-center lg:justify-start items-center p-4 lg:p-6 rounded-2xl shadow-rd top-2/3 right-0 bottom-0 left-1/2 md:top-64 md:bottom-16 md:left-96 overflow-hiden" /* style={{ bottom: "63px", right: "-100px", left: "592px", top: "255px" }} */ >
                     <div className="min-w-14 md:min-w-16 h-14 md:h-16 mr-2 lg:mr-4 rounded-full bg-cover bg-center" style={{ backgroundImage: "url('/images/ninja.png')" }}></div>
                     <div>
-                        <h3 className="text-base md:text-lg lg:text-xl font-bold">Ninja Gadzama</h3>
+                        <h3 className="text-base md:text-lg lg:text-xl font-bold">Ninja Mary</h3>
                         <p className="text-sm md:text-base font-semibold text-gray-400 mb-2">Our Customers</p>
                         <p className="text-sm font-normal text-gray-400 hidden md:block">&quot;Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.&quot;</p>
                     </div>
