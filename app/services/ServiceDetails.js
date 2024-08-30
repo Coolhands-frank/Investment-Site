@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function ServiceDetails() {
     return (
-        <main className="px-20 py-12 md:py-16 lg:py-28 flex flex-col items-center">
+        <main className="px-8 md:px-20 py-12 md:py-16 lg:py-28 flex flex-col items-center">
             <div className="flex flex-col lg:flex-row lg:justify-center items-center lg:items-start">
                 <div className="lg:w-1/2 lg:mr-24 text-justify lg:text-end" style={{maxWidth: "672px"}}>
                     <h1 className="lg:mt-20 capitalize text-4xl md:text-5xl lg:text-6xl font-bold text-center lg:text-end">Give us your money</h1>
@@ -16,7 +16,7 @@ export default function ServiceDetails() {
                         li pronunciation e li plu commun vocabules.
                     </p>
                 </div>
-                <div className="relative lg:w-1/2 my-8 lg:my-0 rounded-3xl lg:shadow-tr1" style={{minWidth:"400px", maxWidth: "500px", height: "620px"}}>
+                <div className="relative lg:w-1/2 my-8 lg:my-0 rounded-3xl lg:shadow-tr1" style={{minWidth:"350px", maxWidth: "500px", height: "620px"}}>
                     <Image
                         src="/images/cryptoPot.png"
                         layout="fill" 
@@ -28,7 +28,7 @@ export default function ServiceDetails() {
             </div>
 
             <div className="lg:-mt-12 flex flex-col lg:flex-row items-center lg:justify-center lg:items-end">
-                <div className="relative mt-8 lg:mt-0 lg:w-1/2 rounded-3xl order-last lg:order-first lg:shadow-tr2" style={{minWidth:"400px", maxWidth: "462px", height: "600px"}}>
+                <div className="relative mt-8 lg:mt-0 lg:w-1/2 rounded-3xl order-last lg:order-first lg:shadow-tr2" style={{minWidth:"350px", maxWidth: "462px", height: "600px"}}>
                     <Image
                         src="/images/money.png"
                         layout="fill" 

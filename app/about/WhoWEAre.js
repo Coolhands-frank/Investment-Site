@@ -5,7 +5,7 @@ export default function WhoWeAre() {
     return (
         <main className="px-8 md:px-20 lg:px-24 py-14 md:py-20 lg:py-28 flex flex-col items-center justify-center lg:flex-row lg:justify-between">
             <div className="lg:mr-4">
-                <div className="relative w-96 h-80 lg:w-80 lg:h-72 mb-4">
+                <div className="relative w-80 md:w-96 h-80 lg:w-80 lg:h-72 mb-4">
                     <Image
                         src="/images/whoWeAre.png"
                         layout="fill" 

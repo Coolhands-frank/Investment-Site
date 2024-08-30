@@ -21,7 +21,7 @@ export default function Benefits(){
                     <div className="absolute z-0 left-0 top-0 bottom-0 rounded-r-6xl w-96 h-full bg-gray-100 overflow-hidden">
                     </div>
                     <div className="relative z-1 items-center tracking-tight capitalize lg:space-x-8 flex flex-col md:flex-wrap lg:flex-nowrap md:flex-row md:justify-between ">
-                        <div className="mb-8 md:mb-0 shadow-2xl bg-white p-14 rounded-2xl flex flex-col space-y-6 text-center items-center lg:text-start lg:items-start w-96 lg:w-auto">
+                        <div className="mb-8 md:mb-0 shadow-2xl bg-white p-14 rounded-2xl flex flex-col space-y-6 text-center items-center lg:text-start lg:items-start max-w-96 lg:w-auto">
                             <Image
                                 src={"/images/Wallet.png"}
                                 width={70}
@@ -31,7 +31,7 @@ export default function Benefits(){
                             <h5 className="text-xl md:text-2xl font-semibold">short term </h5>
                             <p className={`text-sm md:text-base ${plus_jakarta_sans.className}`}>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
                         </div>
-                        <div className="mb-8 md:mb-0 shadow-2xl space-y-6 bg-gradient-to-br from-orange-700 to-amber-500 text-white p-14 rounded-2xl flex flex-col items-center text-center w-96 lg:w-auto">
+                        <div className="mb-8 md:mb-0 shadow-2xl space-y-6 bg-gradient-to-br from-orange-700 to-amber-500 text-white p-14 rounded-2xl flex flex-col items-center text-center max-w-96 lg:w-auto">
                             <Image
                                 src={"/images/account_balance_wallet.png"}
                                 width={70}
@@ -41,7 +41,7 @@ export default function Benefits(){
                             <h5 className="text-xl md:text-2xl font-semibold">long term</h5>
                             <p className={`text-sm md:text-base ${plus_jakarta_sans.className}`}>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
                         </div>
-                        <div className="shadow-2xl space-y-6 bg-white p-14 rounded-2xl flex flex-col items-center text-center lg:items-end lg:text-right w-96 md:mx-auto lg:mx-0 lg:w-auto md:mt-8 lg:mt-0">
+                        <div className="shadow-2xl space-y-6 bg-white p-14 rounded-2xl flex flex-col items-center text-center lg:items-end lg:text-right max-w-96 md:mx-auto lg:mx-0 lg:w-auto md:mt-8 lg:mt-0">
                             <Image
                                 src={"/images/Mortgage.png"}
                                 width={70}

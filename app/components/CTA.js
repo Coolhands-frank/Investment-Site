@@ -4,7 +4,7 @@ export default function Cta(){
     
     return (
         <main className="relative" style={{height: "600px"}}>
-            <div className="my-40 md:my-24 mx-12 md:m-24 py-4 px-6 text-white flex flex-col items-center justify-center absolute inset-0 bg-gradient-to-br from-orange-700 to-amber-500">
+            <div className="my-36 md:my-24 mx-8 md:m-24 py-4 px-6 text-white flex flex-col items-center justify-center absolute inset-0 bg-gradient-to-br from-orange-700 to-amber-500">
                 <div className="capitalize text-3xl md:text-5xl lg:text-6xl font-bold text-center">
                     <h1>why not invest today</h1>
                 </div>

@@ -11,7 +11,7 @@ export default function Footer(){
                 <h1>KraneFinance</h1>
             </div>
             <div>
-                <ul className="text-gray-600 flex items-center space-x-10 lg:space-x-14">
+                <ul className="text-gray-600 flex items-center space-x-5 lg:space-x-14">
                     <li className="hover:text-orange-800 ">
                         <Link href="/">Home</Link>
                     </li>
