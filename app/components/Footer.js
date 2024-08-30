@@ -33,6 +33,7 @@ export default function Footer(){
                         src={"/images/Tweeter.png"}
                         width={40}
                         height={40}
+                        alt=""
                     />
                     </a>
                 </div>
@@ -42,6 +43,7 @@ export default function Footer(){
                         src={"/images/Instagram.png"}
                         width={40}
                         height={40}
+                        alt=""
                     />
                     </a>  
                 </div>
@@ -51,6 +53,7 @@ export default function Footer(){
                         src={"/images/Facebook.png"}
                         width={40}
                         height={40}
+                        alt=""
                     />  
                     </a>
                 </div>
@@ -60,6 +63,7 @@ export default function Footer(){
                         src={"/images/Youtube.png"}
                         width={40}
                         height={40}
+                        alt=""
                     />  
                     </a>
                 </div>

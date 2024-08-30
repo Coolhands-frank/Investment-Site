@@ -10,6 +10,7 @@ export default function WhoWeAre() {
                         src="/images/whoWeAre.png"
                         layout="fill" 
                         objectFit="cover"
+                        alt=""
                     />
                 </div>
                 <div className="mb-4 lg:mb-0 capitalize font-bold text-center text-4xl md:text-5xl lg:text-6xl">Who we are</div>

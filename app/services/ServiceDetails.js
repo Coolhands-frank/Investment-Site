@@ -22,6 +22,7 @@ export default function ServiceDetails() {
                         layout="fill" 
                         objectFit="cover"
                         className="rounded-3xl"
+                        alt=""
                     />
                 </div>
             </div>
@@ -33,6 +34,7 @@ export default function ServiceDetails() {
                         layout="fill" 
                         objectFit="cover"
                         className="rounded-3xl"
+                        alt=""
                     />
                 </div>
                 <div className="lg:w-1/2 lg:ml-24 text-justify lg:text-start" style={{maxWidth: "672px"}}>

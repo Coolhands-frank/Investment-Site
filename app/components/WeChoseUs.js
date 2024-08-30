@@ -62,6 +62,7 @@ export default function WeChoseUs () {
                                         src={"/images/good.png"}
                                         width={24}
                                         height={24}
+                                        alt=""
                                     />
                                 </div>
                                 <p>Li Europan lingues es membres del sam familie.</p>
@@ -72,6 +73,7 @@ export default function WeChoseUs () {
                                         src={"/images/good.png"}
                                         width={24}
                                         height={24}
+                                        alt=""
                                     />
                                 </div>
                                 <p>Li Europan lingues es membres del sam familie.</p>
@@ -84,6 +86,7 @@ export default function WeChoseUs () {
                                         src={"/images/good.png"}
                                         width={24}
                                         height={24}
+                                        alt=""
                                     />
                                 </div>
                                 
@@ -95,6 +98,7 @@ export default function WeChoseUs () {
                                         src={"/images/good.png"}
                                         width={24}
                                         height={24}
+                                        alt=""
                                     />
                                 </div>
                                 <p>Li Europan lingues es membres del sam familie.</p>
@@ -107,6 +111,7 @@ export default function WeChoseUs () {
                                         src={"/images/good.png"}
                                         width={24}
                                         height={24}
+                                        alt=""
                                     />
                                 </div>
                                 <p>Li Europan lingues es membres del sam familie.</p>
@@ -117,6 +122,7 @@ export default function WeChoseUs () {
                                         src={"/images/good.png"}
                                         width={24}
                                         height={24}
+                                        alt=""
                                     />
                                 </div>
                                 <p>Li Europan lingues es membres del sam familie.</p>
