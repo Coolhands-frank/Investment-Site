@@ -8,9 +8,9 @@ export default function Hero(){
             <div className="hidden md:block absolute z-1 top-96 md:top-80 rounded-tr-6xl opacity-5 bottom-0 left-0 right-2/3 bg-gray-100"></div>
             <div className="hidden md:block absolute z-2 top-44 rounded-bl-6xl opacity-5 bottom-32 left-3/4 right-0 bg-gray-100"></div>
 
-            <div className="relative z-3 lg:pl-20 lg:pr-4 pt-12 md:pt-20 pb-20 md:pb-28 lg:pb-48 flex flex-col md:flex-row lg:justify-between items-center lg:space-x-2">
-                <div className="lg:w-2/3 px-10 lg:px-0 md:pl-12 md:pr-4 text-white flex flex-col">
-                    <div className="tracking-normal md:tracking-wide font-bold md:leading-tight lg:leading-snug text-4xl lg:text-6xl">
+            <div className="relative z-3 px-8 lg:px-20 pt-12 md:pt-20 pb-28 md:pb-44 lg:pb-56 flex flex-col md:flex-row lg:justify-between items-center lg:space-x-2">
+                <div className="lg:w-2/3 md:mr-4 text-white flex flex-col">
+                    <div className="tracking-normal md:tracking-wide font-bold leading-tight md:leading-tight lg:leading-snug text-2xl md:text-4xl lg:text-6xl">
                         <h1 className="capitalize ">Preserving your finances for a better future</h1>
                     </div>
                     <div className={`${plus_jakarta_sans.className} mt-2 mb-4 md:mt-4 md:mb-8 lg:mt-8 lg:mb-14`}>
