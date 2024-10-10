@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { plus_jakarta_sans } from "../fonts"
+import { plus_jakarta_sans } from "../../app/fonts"
 
 export default function WhoWeAre() {
     return (

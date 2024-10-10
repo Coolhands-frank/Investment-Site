@@ -1,4 +1,4 @@
-import ServiceDetails from "./ServiceDetails"
+import ServiceDetails from "../../components/ServicesComponents/ServiceDetails"
 
 export default function Services() {
     return (

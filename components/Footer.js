@@ -1,9 +1,17 @@
+"use client"
 import Link from 'next/link';
-import { plus_jakarta_sans } from "../fonts";
+import { plus_jakarta_sans } from "../app/fonts";
 import CustomSelect from './CustomSelect';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export default function Footer(){
+    const pathname = usePathname()
+    const noFooterRoutes = ['/dashboard'];
+
+    if (noFooterRoutes.includes(pathname)) {
+        return null; // Do not render the Footer on this route
+      }
 
     return (
         <main className="bg-gray-100 text-sm md:text-base font-bold py-14 px-10 flex flex-col items-center justify-center space-y-8">

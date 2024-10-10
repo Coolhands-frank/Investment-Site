@@ -1,5 +1,4 @@
 'use client'
-import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import DesktopNavLinks from './NavComponents/DesktopNavLinks';
@@ -17,6 +16,11 @@ const Navbar = () => {
 
   const pathname = usePathname()
   const isHome = pathname === "/";
+  const noNavRoutes = ['/dashboard'];
+
+  if (noNavRoutes.includes(pathname)) {
+    return null; // Do not render the Navbar on this route
+  }
 
   return (
     <>

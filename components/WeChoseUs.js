@@ -1,5 +1,5 @@
 "use client"
-import { plus_jakarta_sans } from "../fonts"
+import { plus_jakarta_sans } from "../app/fonts"
 import Image from 'next/image'
 import React, { useState, useEffect, useRef } from 'react';
 

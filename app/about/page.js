@@ -1,6 +1,6 @@
-import WeChoseUs from "../components/WeChoseUs"
-import OurHistory from "../components/OurHistory"
-import WhoWeAre from "./WhoWEAre"
+import WeChoseUs from "../../components/WeChoseUs"
+import OurHistory from "../../components/OurHistory"
+import WhoWeAre from "../../components/AboutComponents/WhoWEAre"
 
 export default function About() {
     return (
