@@ -38,7 +38,7 @@ export default function MobileDrawer({ isOpen, onClose }) {
           </li>
           <div className="w-full bg-orange-600 rounded-md py-2 flex justify-center items-center">
             <li className="text-orange-100 text-md hover:text-orange-900 hover:font-semibold">
-              <Link href="#">Register</Link>
+              <Link href="/signup">Register</Link>
             </li>
           </div>
           

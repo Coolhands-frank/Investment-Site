@@ -14,7 +14,7 @@ export default function Hero(){
                         <h1 className="capitalize ">Preserving your finances for a better future</h1>
                     </div>
                     <div className={`${plus_jakarta_sans.className} mt-2 mb-4 md:mt-4 md:mb-8 lg:mt-8 lg:mb-14`}>
-                     <p className="normal-case font-normal text-sm md:text-base lg:text-base">Invest and multiply your earning in the best way possible 
+                     <p className="normal-case font-normal text-sm md:text-base">Invest and multiply your earning in the best way possible 
                         we offer the best and only the best and the one thing we do is 
                         let you create your own world of imagination and the plenty things we
                         can do together in the span of two months</p>
@@ -28,6 +28,7 @@ export default function Hero(){
                     height={600}
                     className="lg:w-1/2 mt-8"
                     alt="Placeholder image"
+                    priority 
                     />  
                 
             </div>

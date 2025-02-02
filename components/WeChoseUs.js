@@ -17,18 +17,19 @@ export default function WeChoseUs () {
           },
           { threshold: 0.1 } // Trigger when 10% of the image is visible
         );
-    
-        if (imageRef.current) {
-          observer.observe(imageRef.current);
+
+        const currentImageRef = imageRef.current; 
+
+        if (currentImageRef) {
+          observer.observe(currentImageRef);
         }
-    
+
         return () => {
-          if (imageRef.current) {
-            observer.unobserve(imageRef.current);
+          if (currentImageRef) {
+            observer.unobserve(currentImageRef); 
           }
         };
-    
-      }, []);
+    }, []);
 
     return (
         <main >
@@ -36,16 +37,15 @@ export default function WeChoseUs () {
                 <div className="absolute z-0 left-0 top-0 bottom-56 rounded-r-6xl w-96 bg-gray-100 overflow-hidden">
                 </div>
                 <div className="relative z-1 px-10 lg:px-20  md:flex md:justify-between md:space-x-12">
-                    
-                        <Image 
-                            src={"/images/WeChoseUs.png"}
-                            ref={imageRef}
-                            width={472}
-                            height={760}
-                            className={`mb-8 md:mb-0 shadow-rd md:w-1/3 lg:w-1/2 ${isVisible ? "animate-fadeInLeft" : "opacity-0"}`}
-                            alt="WeChoseUs image"
-                        />
-                    
+                    <Image 
+                        src={"/images/WeChoseUs.png"}
+                        ref={imageRef}
+                        width={472}
+                        height={760}
+                        className={`mb-8 md:mb-0 shadow-rd md:w-1/3 lg:w-1/2 ${isVisible ? "animate-fadeInLeft" : "opacity-0"}`}
+                        alt="WeChoseUs image"
+                        priority 
+                    />
                     <div className="flex flex-col  md:w-2/3 justify-between space-y-8 md:space-y-2">
                         <div className="capitalize font-bold text-4xl lg:text-6xl tracking-wide leading-tight lg:leading-tight">
                             <h1 className="">Driving Financial Growth through our expertise and passion</h1>
@@ -90,7 +90,6 @@ export default function WeChoseUs () {
                                         alt=""
                                     />
                                 </div>
-                                
                                 <p>Li Europan lingues es membres del sam familie.</p>
                             </div>
                             <div className="flex">
@@ -132,7 +131,6 @@ export default function WeChoseUs () {
                         <div>
                             <div className={`${plus_jakarta_sans.className} shadow-rd p-4 rounded-3xl flex text-sm lg:text-base font-normal capitalize w-fit`}>
                                 <div className="mr-2 h-16 w-16 rounded-full bg-gray-100 bg-cover bg-center" style={{ backgroundImage: "url('/images/contactImg.jpg')" }}>
-                                    
                                 </div>
                                 <div className="flex flex-col justify-between">
                                     <p>can call us</p>

@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const pathname = usePathname()
   const isHome = pathname === "/";
-  const noNavRoutes = ['/dashboard'];
+  const noNavRoutes = ['/dashboard', '/signup', '/signin'];
 
   if (noNavRoutes.includes(pathname)) {
     return null; // Do not render the Navbar on this route

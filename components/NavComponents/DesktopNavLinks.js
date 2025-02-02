@@ -37,7 +37,7 @@ export default function DesktopNavLinks() {
             <a href="/api/auth/login">Log In</a>
           </div>
           <div className="px-8 py-2 hover:font-bold hover:text-orange-900 bg-orange-500 text-orange-100 rounded-md">
-            <a href="#">Register</a>
+            <a href="/signup">Register</a>
           </div>
       </div>
     </main>

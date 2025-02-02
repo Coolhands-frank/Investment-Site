@@ -5,8 +5,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { headers } from 'next/headers';
 
-
-
 export const metadata = {
   title: "Investment Site",
   description: "created by coolhands",

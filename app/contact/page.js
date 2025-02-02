@@ -1,4 +1,4 @@
-import Image from "next/image"
+// import Image from "next/image"
 import ContactDetails from "../../components/ContactComponents/ContactDetails"
 
 export default function ContactUs() {
