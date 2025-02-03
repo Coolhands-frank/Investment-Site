@@ -34,10 +34,10 @@ export default function DesktopNavLinks() {
 
       <div className="flex space-x-5 text-base">
           <div className="py-2 hover:text-orange-900 hover:font-bold">
-            <a href="/api/auth/login">Log In</a>
+            <Link href="/signin">Sign In</Link>
           </div>
           <div className="px-8 py-2 hover:font-bold hover:text-orange-900 bg-orange-500 text-orange-100 rounded-md">
-            <a href="/signup">Register</a>
+            <Link href="/signup">Register</Link>
           </div>
       </div>
     </main>

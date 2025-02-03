@@ -1,4 +1,3 @@
-import { UserProvider } from '@auth0/nextjs-auth0/client';
 import { asap } from "./fonts";
 import "./globals.css";
 import Navbar from "../components/Navbar";
@@ -23,7 +22,6 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <UserProvider>
         <body className={asap.className}>
         {/*  {!noNavRoutes.includes(pathname) && <Navbar />} */}
             <Navbar />
@@ -31,7 +29,6 @@ export default function RootLayout({ children }) {
             <Footer />
         {/*  {!noNavRoutes.includes(pathname) && <Footer />} */}
         </body>
-      </UserProvider>
     </html>
   );
 }
