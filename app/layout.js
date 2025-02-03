@@ -2,7 +2,6 @@ import { asap } from "./fonts";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { headers } from 'next/headers';
 
 export const metadata = {
   title: "Investment Site",
@@ -10,18 +9,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-{/*
-  const headersList = headers();
-  const host = headersList.get('host');
-  const currentUrl = new URL(headersList.get('referer') || `http://${host}`);
-  const pathname = currentUrl.pathname;
-  console.log(pathname)
-
-  // routes without the universal navbar
-  const noNavRoutes = ['/dashboard', "/login"]; */}
 
   return (
     <html lang="en">
+        <head>
+          <meta charSet="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </head>
         <body className={asap.className}>
         {/*  {!noNavRoutes.includes(pathname) && <Navbar />} */}
             <Navbar />
