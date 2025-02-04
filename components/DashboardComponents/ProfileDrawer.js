@@ -18,9 +18,9 @@ export default function ProfileDrawer({ isOpen, onClose }) {
             </button>
         </div>
         */}
-        <div className="h-full px-8 flex flex-col justify-center items-center">
+        <div className="h-full px-4 flex flex-col justify-center items-center">
             <Profile />
-            <div className="border-t-2 pt-6 mt-2 px-4 text-gray-100">
+            <div className="border-t-2 pt-6 mt-2 text-gray-100">
                 <ul className="text-xs space-y-4">
                     <li className="" onClick={onClose}>
                         <Link className="flex items-center" href="/dashboard">

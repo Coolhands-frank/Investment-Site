@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Profile() {
 
     return (
-        <div className="rounded-xl bg-amber-300 my-3 px-6 lg:px-8 py-4 flex flex-col justify-center items-center">
+        <div className="rounded-xl bg-amber-300 my-3 px-4 lg:px-8 py-4 flex flex-col justify-center items-center">
             <div className="w-20 h-20 md:w-36 md:h-36 border rounded-full">
 
             </div>

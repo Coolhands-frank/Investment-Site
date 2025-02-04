@@ -34,7 +34,7 @@ export default function MobileDrawer({ isOpen, onClose }) {
             <Link href="/services" onClick={onClose}>Services</Link>
           </li>
           <li className="text-orange-500 text-xl hover:text-orange-900 hover:font-semibold">
-            <Link href="#">Log in</Link>
+            <Link href="/dashboard">Log in</Link>
           </li>
           <div className="w-full bg-orange-600 rounded-md py-2 flex justify-center items-center">
             <li className="text-orange-100 text-md hover:text-orange-900 hover:font-semibold">
