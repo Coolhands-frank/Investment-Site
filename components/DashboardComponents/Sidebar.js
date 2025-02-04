@@ -5,7 +5,7 @@ import Profile from './UserProfile'
 export default function SideBar() {
 
     return (
-        <div className="flex flex-col items-center justify-center px-4">
+        <div className="h-full flex flex-col items-center justify-center px-4">
             <h1 className="font-black text-lg lg:text-xl text-orange-100">Krane Finance</h1>
             <Profile />
             <div className="border-t-2 pt-4 px-4 md:px-10">

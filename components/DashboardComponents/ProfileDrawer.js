@@ -8,7 +8,7 @@ export default function ProfileDrawer({ isOpen, onClose }) {
     return (
       <div
         className={`fixed flex flex-col z-10 top-0 right-full h-full w-1/2 bg-orange-500 text-black transition-transform duration-300 transform ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
+          !isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         {/*
@@ -97,7 +97,7 @@ export default function ProfileDrawer({ isOpen, onClose }) {
                     </li>
                 </ul>
 
-                <Link className="text-xs flex items-center mt-10" href="#" onClick={onClose}>
+                <Link className="text-xs flex items-center mt-10" href="/" onClick={onClose}>
                     <Image
                         src={"/images/logout-rounded.png"}
                         width={16}
