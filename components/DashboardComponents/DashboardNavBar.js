@@ -15,7 +15,7 @@ const DashboardNavBar = () => {
 
   return (
     <>
-      <div className="hidden h-full md:w-1/4 lg:max-w-sm text-white md:flex flex-col justify-between items-center">
+      <div className="hidden h-full md:w-1/4 md:mx-4 lg:max-w-sm text-white md:flex flex-col justify-between items-center">
         <SideBar />
       </div>
 

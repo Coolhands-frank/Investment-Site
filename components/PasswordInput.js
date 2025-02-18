@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
 
-export default function PasswordInput({ placeholder }) {
+export default function PasswordInput({ placeholder, value, name, onChange }) {
     const [passwordVisible, setPasswordVisible] = useState(false);
 
     const toggleVisibility = () => {
@@ -14,8 +14,12 @@ export default function PasswordInput({ placeholder }) {
             {/* Password Input */}
             <input
                 type={passwordVisible ? 'text' : 'password'}
+                name={ name }
                 placeholder={ placeholder }
                 className="w-full p-3 pr-10 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                value={ value }
+                onChange={ onChange }
+                required
             />
 
             {/* Toggle Icon */}

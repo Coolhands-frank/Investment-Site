@@ -41,7 +41,8 @@ export default function Testimonial() {
                     width={876}
                     height={478}
                     objectFit="cover"
-                    alt=""
+                    alt="world image"
+                    priority
                 />
             </div>
         </main>

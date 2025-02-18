@@ -1,14 +1,15 @@
-import Link from 'next/link';
+//import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import Profile from './UserProfile';
-import Image from 'next/image';
+import NavLinks from "./NavLinks";
+//import Image from 'next/image';
 
 export default function ProfileDrawer({ isOpen, onClose }) {
     return (
       <div
         className={`fixed flex flex-col z-10 top-0 right-full h-full w-1/2 bg-orange-500 text-black transition-transform duration-300 transform ${
-          !isOpen ? 'translate-x-0' : 'translate-x-full'
+          isOpen ? 'translate-x-full' : 'translate-x-0'
         }`}
       >
         {/*
@@ -20,7 +21,9 @@ export default function ProfileDrawer({ isOpen, onClose }) {
         */}
         <div className="h-full px-4 flex flex-col justify-center items-center">
             <Profile />
-            <div className="border-t-2 pt-6 mt-2 text-gray-100">
+            <NavLinks onClick={onClose} />
+
+          {/*  <div className="border-t-2 pt-6 mt-2 text-gray-100">
                 <ul className="text-xs space-y-4">
                     <li className="" onClick={onClose}>
                         <Link className="flex items-center" href="/dashboard">
@@ -107,7 +110,7 @@ export default function ProfileDrawer({ isOpen, onClose }) {
                     />
                     <p>Log Out</p>
                 </Link>
-            </div>   
+            </div>   */}
         </div>
         
         

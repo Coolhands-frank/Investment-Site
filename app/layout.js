@@ -2,6 +2,7 @@ import { asap } from "./fonts";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { UserProvider } from "../context/UserContext";
 
 export const metadata = {
   title: "Investment Site",
@@ -17,11 +18,11 @@ export default function RootLayout({ children }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </head>
         <body className={asap.className}>
-        {/*  {!noNavRoutes.includes(pathname) && <Navbar />} */}
+          <UserProvider>
             <Navbar />
             {children}
             <Footer />
-        {/*  {!noNavRoutes.includes(pathname) && <Footer />} */}
+          </UserProvider>
         </body>
     </html>
   );
