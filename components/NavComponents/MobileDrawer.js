@@ -1,8 +1,23 @@
+"use client"
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { getSession } from "../../lib/auth";
+import { useState, useEffect } from "react";
 
 export default function MobileDrawer({ isOpen, onClose }) {
+  const [isSession, setIsSession] = useState(false)
+
+    useEffect(() => {
+      const checkSession = async () => {
+          const session = await getSession();
+          if (session?.user) {
+            setIsSession(true)
+          }
+      };
+      checkSession();
+    }, []);
+
     return (
       <div
         className={`fixed flex flex-col z-10 top-0 right-0 h-full w-full bg-white text-black transition-transform duration-300 transform ${
@@ -33,15 +48,25 @@ export default function MobileDrawer({ isOpen, onClose }) {
           <li className="text-orange-500 text-xl hover:text-orange-900 hover:font-semibold">
             <Link href="/services" onClick={onClose}>Services</Link>
           </li>
-          <li className="text-orange-500 text-xl hover:text-orange-900 hover:font-semibold">
-            <Link href="/dashboard">Log in</Link>
-          </li>
-          <div className="w-full bg-orange-600 rounded-md py-2 flex justify-center items-center">
-            <li className="text-orange-100 text-md hover:text-orange-900 hover:font-semibold">
-              <Link href="/signup">Register</Link>
-            </li>
-          </div>
-          
+
+          { !isSession ?
+            <div>
+              <li className="w-full mb-8 text-orange-500 text-xl hover:text-orange-900 hover:font-semibold">
+                <Link href="/signin">Log in</Link>
+              </li>
+              <div className="w-full bg-orange-600 rounded-md py-2 flex justify-center items-center">
+                <li className="text-orange-100 text-md hover:text-orange-900 hover:font-semibold">
+                  <Link href="/signup">Register</Link>
+                </li>
+              </div>
+            </div>
+            :
+            <div className="w-full mt-8 bg-orange-600 rounded-md py-2 flex justify-center items-center">
+                <li className="text-orange-100 text-md hover:text-orange-900 hover:font-semibold">
+                  <Link href="/dashboard">Dashboard</Link>
+                </li>
+            </div>
+          }
         </ul>
       </div>
     );

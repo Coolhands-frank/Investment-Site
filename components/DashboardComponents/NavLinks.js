@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { signOut } from '@/lib/auth';
 import { useRouter } from "next/navigation";
 import { useUser } from "@/context/UserContext";
-import { Home, Circle } from "lucide-react";
+import { Home } from "lucide-react";
 import { usePathname } from 'next/navigation';
  
 
@@ -61,80 +61,7 @@ export default function NavLinks({onClick}) {
 
                     </li>
                 ))}
-
-            {/*    <li className="flex items-center" onClick= {onClick}>
-                    <Circle size={12} color="null" className={`${pathname === "/dashboard" ? 'block' : 'hidden'} bg-orange-900 rounded-full mr-2`}/>
-                    <Link className="flex items-center hover:text-orange-200" href="/dashboard">
-                        <Image
-                            src={"/images/Monitor.png"}
-                            width={16}
-                            height={16}
-                            alt=""
-                            className="mr-2" 
-                        />
-                        <p>Overview</p>
-                    </Link>
-                </li>
-                <li className="" onClick= {onClick}>
-                    <Link className="flex items-center hover:text-orange-200" href="/dashboard/withdraw">
-                        <Image
-                            src={"/images/dialing-numbers.png"}
-                            width={16}
-                            height={16}
-                            alt=""
-                            className="mr-2" 
-                        />
-                        <p>Withdraw</p>
-                    </Link>
-                </li> 
-                <li className="" onClick= {onClick}>
-                    <Link className="flex items-center hover:text-orange-200" href="/dashboard/invest">
-                        <Image
-                            src={"/images/add-dollar.png"}
-                            width={16}
-                            height={16}
-                            alt=""
-                            className="mr-2" 
-                        />
-                        <p>Invest Funds</p>
-                    </Link>
-                </li>
-                <li onClick= {onClick}>
-                    <Link className="flex items-center hover:text-orange-200" href="#">
-                        <Image
-                            src={"/images/shopping-cart.png"}
-                            width={16}
-                            height={16}
-                            alt="" 
-                            className="mr-2"
-                        />
-                       <p>Products</p>
-                    </Link>
-                </li>
-                <li onClick= {onClick}>
-                    <Link className="flex items-center hover:text-orange-200" href="#">
-                        <Image
-                            src={"/images/health-graph.png"}
-                            width={16}
-                            height={16}
-                            alt="" 
-                            className="mr-2"
-                        />
-                        <p>History</p>
-                    </Link>
-                </li>
-                <li onClick= {onClick}>
-                    <Link className="flex items-center hover:text-orange-200" href="#">
-                        <Image
-                            src={"/images/Settings.png"}
-                            width={16}
-                            height={16}
-                            alt="settings icon" 
-                            className="mr-2"
-                        />
-                        <p>Settings</p>
-                    </Link>
-                </li> */}
+                
             </ul>
             <div className="mt-8 flex flex-row justify-center gap-2 text-xs lg:text-base">
                 <Link href="/" className="flex items-center hover:text-orange-200">

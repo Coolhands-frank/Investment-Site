@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import PasswordInput from '@/components/PasswordInput';
 import { poppins } from '/app/fonts';
 import Image from 'next/image';
+import Link from 'next/link';
+import { ArrowLeft } from "lucide-react";
 
 export default function SignIn() {
     const [email, setEmail] = useState("");
@@ -12,19 +14,6 @@ export default function SignIn() {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false)
     const router = useRouter();
-
- {/*   useEffect(() => {
-        const checkUser = async () => {
-          const session = await getSession();
-    
-          if (session?.user) {
-            setMessage("✅ Email verified! Redirecting...");
-            setTimeout(() => router.push("/dashboard"), 2000);
-          }
-        };
-
-        checkUser();
-      }, [router]); */}
 
     useEffect(() => {
         const checkSession = async () => {
@@ -54,7 +43,18 @@ export default function SignIn() {
         <main className={`${poppins.className} text-gray-800 bg-gray-100 flex flex-row`}>
             
             <div className="p-6 w-full flex flex-col items-center h-screen">
-                <p className="text-sm md:text-base self-end">Dont have an account? <span className="text-orange-700" ><a href="/signup">Sign Up!</a></span></p>
+                <div className="flex justify-between w-full">
+                    <Link href="/">
+                        <ArrowLeft size={24} />
+                    </Link>
+                    <p className="text-sm md:text-base">
+                        Dont have an account?  
+                        <span className="text-orange-700" >
+                            <Link href="/signup"> Sign Up!</Link>
+                        </span>
+                    </p>
+                </div>
+
                 <div className="flex flex-col items-center justify-center h-full">
                     <h2 className="text-xl lg:text-2xl font-bold">Welcome Back</h2>
                     <p className="mt-2 mb-6 opacity-70">Login into your account</p>

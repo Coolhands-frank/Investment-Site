@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 const options = [
   { value: 'Services', label: 'Services', url: '/services' },
-  { value: 'Register', label: 'Register', url: '#' },
-  { value: 'Sign In', label: 'Sign In', url: '#' },
+  { value: 'Register', label: 'Register', url: '/signup' },
+//  { value: 'Sign In', label: 'Sign In', url: '#' },
 ];
 
 const customStyles = {

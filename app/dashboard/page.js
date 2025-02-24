@@ -106,7 +106,7 @@ export default function Dashboard() {
                         height={80}
                         alt="database icon"
                         priority
-                        className="h-16 w-15"
+                        className="h-15 w-15"
                     />
                     <h2 className="text-3xl md:text-4xl font-bold mt-3 md:mt-6">${ user ? user.total_withdrawal : ""}</h2>
                     <p className="text-xs md:text-sm font-medium">Total Withdraw</p>

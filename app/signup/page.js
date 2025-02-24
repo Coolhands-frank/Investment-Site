@@ -6,7 +6,8 @@ import { getSession } from "../../lib/auth";
 import PasswordInput from '@/components/PasswordInput';
 import { poppins } from '/app/fonts';
 import Image from 'next/image';
-import { getUser } from "../../lib/auth";
+import Link from 'next/link';
+import { ArrowLeft } from "lucide-react";
 
 
 export default function SignUp() {
@@ -27,10 +28,9 @@ export default function SignUp() {
         setSuccess("")
         const checkUser = async () => {
           const session = await getSession();
-        //  const authUser = await getUser();
     
           if (session?.user) {
-            setMessage("✅ Email verified! Redirecting...");
+            setMessage("✅ Active Session! Redirecting...");
             setTimeout(() => router.push("/dashboard"), 2000);
           }
         };
@@ -89,8 +89,19 @@ export default function SignUp() {
                     priority
                 />  
             </div>
+
             <div className="p-6 w-full flex flex-col items-center h-screen">
-                <p className="text-sm md:text-base self-end">Have an account? <span className="text-orange-700" ><a href="/signin">Sign In!</a></span></p>
+                <div className="flex justify-between w-full">
+                    <Link href="/">
+                        <ArrowLeft size={24} />
+                    </Link>
+                    <p className="text-sm md:text-base">
+                        Dont have an account?  
+                        <span className="text-orange-700" >
+                            <Link href="/signin"> Log In!</Link>
+                        </span>
+                    </p>
+                </div>
                 <div className="flex flex-col items-center justify-center h-full">
                     <h2 className="text-xl lg:text-2xl font-bold">Get Started</h2>
                     <p className="mt-2 mb-6 opacity-70">Getting started is easy</p>
