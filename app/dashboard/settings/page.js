@@ -1,11 +1,18 @@
 "use client"
 import { useUser } from "@/context/UserContext"
+import { useState, useEffect } from "react"
 
 export default function Settings() {
     const { user } = useUser()
+    const [registrationDate, setRegistrationDate] = useState(null)
 
-    const formattedDate = new Date(user.created_at).toLocaleDateString("en-GB");
-
+    useEffect(() => {
+      if (user?.created_at) {
+        const formattedDate = new Date(user.created_at).toLocaleDateString("en-GB");
+        setRegistrationDate(formattedDate);
+      }
+    }, [user]); // Runs only when `user` changes
+   
     return (
             
               <div className="flex items-center md:justify-center md:h-full bg-gray-100">
@@ -20,7 +27,7 @@ export default function Settings() {
 
                     <div className="flex items-center">
                       <p className="w-2/3 md:w-1/3 font-medium py-2">Registration Date</p>
-                      <p className="w-1/3 md:w-2/3">{user ? formattedDate : ""}</p>
+                      <p className="w-1/3 md:w-2/3">{ registrationDate ? registrationDate : ""}</p>
                     </div>  
                   </div>
           
