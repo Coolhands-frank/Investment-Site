@@ -15,7 +15,7 @@ export default function Settings() {
    
     return (
             
-              <div className="flex items-center md:justify-center md:h-full bg-gray-100">
+              <div className="flex items-center justify-center h-full bg-gray-100">
                 <div className="w-full max-w-4xl bg-white shadow-md rounded-lg p-6">
                   
                   {/* Account Info Section */}
