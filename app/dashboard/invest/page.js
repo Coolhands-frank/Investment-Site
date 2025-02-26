@@ -79,12 +79,12 @@ export default function Invest() {
                     
                     <div className="relative border border-orange-600 rounded-lg shadow-md py-2 w-full overflow-hidden group">
                         {/* Background Fill on Hover */}
-                        <div className="absolute inset-0 bg-amber-300 scale-x-0 origin-center transition-transform duration-500 ease-out group-hover:scale-x-100"></div>
+                        <div className="absolute inset-0 bg-orange-500 scale-x-0 origin-center transition-transform duration-500 ease-out group-hover:scale-x-100"></div>
 
                         {/* Content */}
                         <button 
                         onClick={handleSubmit}
-                        className="w-full relative z-10 hover:text-amber-100 text-center flex items-center justify-center h-full font-bold text-xl"
+                        className="w-full relative z-10 hover:text-orange-100 text-center flex items-center justify-center h-full font-bold text-xl"
                         >
                           INVEST NOW
                         </button>

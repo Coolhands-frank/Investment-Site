@@ -1,8 +1,7 @@
 import { asap } from "./fonts";
 import "./globals.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import { UserProvider } from "../context/UserContext";
+import PageLayout from "@/components/PageLayout"; // Client Component for layout logic
 
 export const metadata = {
   title: "Investment Site",
@@ -19,9 +18,7 @@ export default function RootLayout({ children }) {
         </head>
         <body className={asap.className}>
           <UserProvider>
-            <Navbar />
-            {children}
-            <Footer />
+            <PageLayout>{children}</PageLayout>
           </UserProvider>
         </body>
     </html>

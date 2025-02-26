@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 export default function Footer(){
     const pathname = usePathname()
     const noFooterRoutes = [
-        '/dashboard', '/signup', '/signin', '/dashboard/withdraw', '/dashboard/invest'
+        '/signup', '/signin'
     ]
         ;
 

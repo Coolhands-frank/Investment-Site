@@ -14,8 +14,8 @@ const DashboardNavBar = () => {
   };
 
   return (
-    <>
-      <div className="hidden h-full md:w-1/4 md:mx-4 lg:max-w-sm text-white md:flex flex-col justify-between items-center">
+    <div>
+      <div className="hidden md:flex justify-between items-center h-full md:w-1/4 md:mx-4 lg:max-w-sm text-white">
         <SideBar />
       </div>
 
@@ -27,8 +27,8 @@ const DashboardNavBar = () => {
             <CogIcon className="h-8 w-8" />
         </Link>
         <ProfileDrawer isOpen={isProfileDrawer} onClose={handleProfileToggle} />
+      </div>
     </div>
-    </>
   );
 };
 
