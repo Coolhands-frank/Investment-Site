@@ -22,32 +22,32 @@ export default function OurTeam() {
                     <div className="flex flex-col p-4 drop-shadow-2xl shadow-2xl rounded-2xl max-w-72">
                         <div className="w-28 self-center h-20 md:w-64 lg:w-full md:h-36 bg-green-600 rounded-2xl bg-cover bg-center" style={{ backgroundImage: "url('/images/founder.png')" }}></div>
                         <div className="self-center mt-6">
-                            <h3 className="font-bold text-base md:text-xl">Elendu Lilian</h3>
-                            <p className={`${plus_jakarta_sans.className} mt-2 text-center text-sm md:text-base font-light`}>Founder</p>
+                            <h3 className="font-bold text-sm md:text-xl">Elendu Lilian</h3>
+                            <p className={`${plus_jakarta_sans.className} mt-2 text-center text-xs md:text-base font-light`}>Founder</p>
                         </div>
                     </div>
 
                     <div className="flex flex-col p-4 drop-shadow-2xl shadow-2xl -mt-4 mb-4 rounded-2xl max-w-72">
                         <div className="w-28 self-center h-20 md:w-64 lg:w-full md:h-36 bg-green-600 rounded-2xl bg-cover bg-center" style={{ backgroundImage: "url('/images/contactImg.jpg')" }}></div>
                         <div className="self-center mt-6">
-                            <h3 className="font-bold text-base md:text-xl">Crypto Lendu</h3>
-                            <p className={`${plus_jakarta_sans.className} mt-2 text-center text-sm md:text-base font-light`}>CEO</p>
+                            <h3 className="font-bold text-sm md:text-xl">Crypto Lendu</h3>
+                            <p className={`${plus_jakarta_sans.className} mt-2 text-center text-xs md:text-base font-light`}>CEO</p>
                         </div>  
                     </div>
 
                     <div className="flex flex-col p-4 drop-shadow-2xl shadow-2xl rounded-2xl max-w-72">
                         <div className="w-28 self-center h-20 md:w-64 lg:w-full md:h-36 bg-green-600 rounded-2xl bg-cover bg-center" style={{ backgroundImage: "url('/images/dev1.jpg')" }}></div>
                         <div className="self-center mt-6">
-                            <h3 className="font-bold text-base md:text-xl">Culhands Frank</h3>
-                            <p className={`${plus_jakarta_sans.className} mt-2 text-center text-sm md:text-base font-light`}>Developer</p>
+                            <h3 className="font-bold text-sm md:text-xl">Culhands Frank</h3>
+                            <p className={`${plus_jakarta_sans.className} mt-2 text-center text-xs md:text-base font-light`}>Developer</p>
                         </div> 
                     </div>
 
                     <div className="flex flex-col p-4 drop-shadow-2xl shadow-2xl -mt-4 mb-4 rounded-2xl max-w-72">
                         <div className="w-28 self-center h-20 md:w-64 lg:w-full md:h-36 bg-green-600 rounded-2xl bg-cover bg-center" style={{ backgroundImage: "url('/images/eillish.png')" }}></div>
                         <div className="self-center mt-6">
-                            <h1 className="font-bold text-base md:text-xl">Dinma Elendu</h1>
-                            <p className={`${plus_jakarta_sans.className} mt-2 text-center text-sm md:text-base font-light`}>Consultant</p>
+                            <h1 className="font-bold text-sm md:text-xl">Dinma Elendu</h1>
+                            <p className={`${plus_jakarta_sans.className} mt-2 text-center text-xs md:text-base font-light`}>Consultant</p>
                         </div> 
                     </div>
 
