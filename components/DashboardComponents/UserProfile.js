@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import { useUser } from "@/context/UserContext";
+import { UserCircleIcon } from '@heroicons/react/24/outline';
+import Link from "next/link";
 
 export default function Profile() {
     const { user } = useUser()
@@ -8,9 +8,28 @@ export default function Profile() {
     return (
         <div className="flex flex-col items-center">
             <div className="rounded-xl bg-amber-300 my-4 px-3 lg:px-6 py-4 flex flex-col justify-center items-center">
-                <div className="w-20 h-20 md:w-36 md:h-36 border rounded-full">
 
-                </div>
+                {/* Profile Picture Container */}
+                <Link href="/dashboard/settings">
+                    <div className="relative group">
+        
+                        {/* Circular Profile Image */}
+                        <div className="border border-amber-100 rounded-full cursor-pointer">
+                            <UserCircleIcon className="h-20 w-20 md:w-36 md:h-36 text-amber-100 object-cover"/>
+                        </div>
+                        {/*    <img
+                            src={image}
+                            alt="Profile"
+                            className="w-24 h-24 rounded-full object-cover border-2 border-gray-300 cursor-pointer"
+                            /> */}
+    
+                        {/* Hover Text */}
+                        <p className="absolute w-full top-full mt-1 left-1/2 transform -translate-x-1/2 px-1 text-sm text-white text-center bg-black bg-opacity-80 rounded-md opacity-0 group-hover:opacity-100 transition duration-300">
+                          Change Avater
+                        </p>
+                    </div>
+                </Link>
+                
                 <div className="flex flex-col items-center justify-center">
                     <div className="my-3 flex flex-col items-center justify-center">
                         <h2 className="font-bold text-base md:text-lg lg:text-xl">{user ? user.name : ""}</h2>

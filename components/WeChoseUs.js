@@ -34,7 +34,7 @@ export default function WeChoseUs () {
     return (
         <main >
             <div className="my-8 md:my-16 relative py-8">
-                <div className="absolute z-0 left-0 top-0 bottom-56 rounded-r-6xl w-96 bg-gray-100 overflow-hidden">
+                <div className="absolute z-0 left-0 top-0 bottom-56 rounded-r-6xl w-full md:w-96 bg-gray-100 overflow-hidden">
                 </div>
                 <div className="relative z-1 px-10 lg:px-20  md:flex md:justify-between md:space-x-12">
                     <Image 

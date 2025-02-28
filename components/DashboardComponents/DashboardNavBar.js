@@ -4,6 +4,7 @@ import Link from 'next/link';
 import SideBar from './Sidebar';
 import ProfileDrawer from './ProfileDrawer';
 import { CogIcon } from '@heroicons/react/24/solid';
+import { UserCircleIcon } from '@heroicons/react/24/outline';
 
 const DashboardNavBar = () => {
 
@@ -20,10 +21,13 @@ const DashboardNavBar = () => {
       </div>
 
       <div className="md:hidden bg-orange-500 py-4 px-8 flex flex-row justify-between items-center">
-        <button className="border rounded-full w-8 h-8 bg-gray-100" onClick={handleProfileToggle}>
-          
-        </button>
-        <Link className="rounded-full text-white hover:bg-gray-700 transition duration-200" href="#">
+        
+        <div className="cursor-pointer flex gap-1 items-center" onClick={handleProfileToggle}>
+          <UserCircleIcon className="h-12 w-12 text-orange-100 md:hover:text-orange-800"/>
+          <p className="text-orange-100 text-lg font-semibold md:hover:text-orange-800">Profile</p>
+        </div>
+
+        <Link className="rounded-full text-orange-100 hover:text-orange-800 transition duration-200" href="/dashboard/settings">
             <CogIcon className="h-8 w-8" />
         </Link>
         <ProfileDrawer isOpen={isProfileDrawer} onClose={handleProfileToggle} />

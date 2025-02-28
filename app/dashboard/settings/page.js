@@ -1,6 +1,8 @@
 "use client"
 import { useUser } from "@/context/UserContext"
 import { useState, useEffect } from "react"
+import { UserCircleIcon } from '@heroicons/react/24/outline';
+import { PencilIcon } from "@heroicons/react/24/solid";
 
 export default function Settings() {
     const { user } = useUser()
@@ -15,9 +17,20 @@ export default function Settings() {
    
     return (
             
-              <div className="flex items-center justify-center h-full bg-gray-100">
+              <div className="flex items-center justify-center md:h-full py-4 bg-gray-100">
                 <div className="w-full max-w-4xl bg-white shadow-md rounded-lg p-6">
-                  
+
+                  <div className="flex flex-col items-center">
+                    <div className="relative border border-amber-300 rounded-full">
+                      
+                        <UserCircleIcon className="h-20 w-20 md:w-36 md:h-36 text-amber-300 object-cover"/>
+                        <button className="px-1 bg-gray-100 flex items-center absolute bottom-1 left-1 border border-gray-700 shadow-md rounded-lg">
+                          <PencilIcon className="w-4 h-4" />
+                          Edit
+                        </button>  
+                    </div> 
+                  </div>
+
                   {/* Account Info Section */}
                   <div className="border-b pb-2 mb-4 text-gray-600">
                     <div className="flex items-center">

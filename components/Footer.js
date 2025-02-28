@@ -17,7 +17,7 @@ export default function Footer(){
       }
 
     return (
-        <main className="bg-gray-100 text-sm md:text-base font-bold py-14 px-10 flex flex-col items-center justify-center space-y-8">
+        <main className="bg-gray-100 text-sm md:text-base font-bold py-14 px-4 md:px-10 flex flex-col items-center justify-center space-y-8">
             <div className="text-xl md:text-2xl text-orange-500">
                 <h1>KraneFinance</h1>
             </div>
