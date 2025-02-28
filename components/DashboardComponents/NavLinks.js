@@ -65,7 +65,7 @@ export default function NavLinks({onClick}) {
             </ul>
             <div className="mt-8 flex flex-row justify-center gap-2 text-xs lg:text-base">
                 <Link href="/" className="flex items-center hover:text-orange-200">
-                    <Home className="w-4 h-4 mr-1 opacity-60" />
+                    <Home className="w-3 h-3 md:w-4 md:h-4 mr-1 opacity-60" />
                     <span>Home</span>
                 </Link>
                 <button className="flex items-center hover:font-bold" onClick= {handleSignOut}>

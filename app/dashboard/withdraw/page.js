@@ -18,7 +18,7 @@ export default function Withdraw() {
                 <h2 className="text-orange-500 text-2xl md:text-3xl lg:text-4xl font-bold">${user ? user.total_investment: "0"}</h2>
             </div>
 
-            <div className="flex flex-col justify-center items-center rounded-xl bg-white shadow-md p-6 mx-4">
+            <div className="flex flex-col justify-center items-center rounded-xl bg-white shadow-md p-3 md:p-6">
                 <button className={`${!isPlaceWithdrawal ? "hover:text-gray-400" : ""} font-bold text-lg md:text-xl`} onClick={handleWithdrawal}>Place Withdrawal</button>
                 {isPlaceWithdrawal && 
                     <form className="flex flex-col items-center justify-center">

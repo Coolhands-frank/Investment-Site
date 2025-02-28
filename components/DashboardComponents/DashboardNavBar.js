@@ -23,8 +23,8 @@ const DashboardNavBar = () => {
       <div className="md:hidden bg-orange-500 py-4 px-8 flex flex-row justify-between items-center">
         
         <div className="cursor-pointer flex gap-1 items-center" onClick={handleProfileToggle}>
-          <UserCircleIcon className="h-12 w-12 text-orange-100 md:hover:text-orange-800"/>
-          <p className="text-orange-100 text-lg font-semibold md:hover:text-orange-800">Profile</p>
+          <UserCircleIcon className="h-10 w-10 text-orange-100 md:hover:text-orange-800"/>
+          <p className="text-orange-100 text-base font-semibold md:hover:text-orange-800">Profile</p>
         </div>
 
         <Link className="rounded-full text-orange-100 hover:text-orange-800 transition duration-200" href="/dashboard/settings">

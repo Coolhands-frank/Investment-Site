@@ -18,7 +18,7 @@ export default function Benefits(){
                     </div>
                 </div>
                 <div className="relative mt-12 py-20 px-10 lg:px-20">
-                    <div className="absolute z-0 left-0 top-0 bottom-0 rounded-r-6xl w-96 h-full bg-gray-100 overflow-hidden">
+                    <div className="absolute z-0 left-0 top-0 bottom-0 rounded-r-6xl w-full md:w-96 h-full bg-gray-100 overflow-hidden">
                     </div>
                     <div className="relative z-1 items-center tracking-tight capitalize lg:space-x-8 flex flex-col md:flex-wrap lg:flex-nowrap md:flex-row md:justify-between ">
                         <div className="mb-8 md:mb-0 shadow-2xl bg-white p-14 rounded-2xl flex flex-col space-y-6 text-center items-center lg:text-start lg:items-start max-w-96 lg:w-auto">
