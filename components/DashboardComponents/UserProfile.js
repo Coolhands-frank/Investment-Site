@@ -7,7 +7,7 @@ export default function Profile() {
 
     return (
         <div className="flex flex-col items-center">
-            <div className="w-44 md:w-52 lg:56 rounded-xl bg-amber-300 my-4 px-3 lg:px-6 py-4 flex flex-col justify-center items-center">
+            <div className="rounded-xl bg-amber-300 my-4 px-3 lg:px-6 py-4 flex flex-col justify-center items-center">
 
                 {/* Profile Picture Container */}
                 <Link href="/dashboard/settings">
