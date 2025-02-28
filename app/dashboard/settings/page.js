@@ -3,6 +3,7 @@ import { useUser } from "@/context/UserContext"
 import { useState, useEffect } from "react"
 import { UserCircleIcon } from '@heroicons/react/24/outline';
 import { PencilIcon } from "@heroicons/react/24/solid";
+import ProfilePicture from "@/components/DashboardComponents/ProfilePicture";
 
 export default function Settings() {
     const { user } = useUser()
@@ -19,17 +20,24 @@ export default function Settings() {
             
               <div className="flex items-center justify-center md:h-full py-4 bg-gray-100">
                 <div className="w-full max-w-4xl bg-white shadow-md rounded-lg p-6">
+                  {user ? <ProfilePicture userId={user.id} /> : <p>Loading...</p>}
 
-                  <div className="flex flex-col items-center">
-                    <div className="relative border border-amber-300 rounded-full">
-                      
+                {/*  <div className="flex flex-col items-center">
+                    <div className="relative w-28 h-28">
+                        <img
+                          src="/images/profile.png"
+                          alt="Profile"
+                          className="w-28 h-28 rounded-full object-cover"
+                        />
+                        
                         <UserCircleIcon className="h-20 w-20 md:w-36 md:h-36 text-amber-300 object-cover"/>
+                        
                         <button className="px-1 bg-gray-100 flex items-center absolute bottom-1 left-1 border border-gray-700 shadow-md rounded-lg">
                           <PencilIcon className="w-4 h-4" />
                           Edit
                         </button>  
                     </div> 
-                  </div>
+                  </div> */}
 
                   {/* Account Info Section */}
                   <div className="border-b pb-2 mb-4 text-gray-600">
@@ -47,40 +55,51 @@ export default function Settings() {
                   {/* Form Fields */}
                   <div className="space-y-4">
                     <div className="flex flex-col md:flex-row md:items-center">
-                      <label className="md:w-1/3 text-gray-700 font-medium ">Full Name</label>
+                      <label for="name" className="md:w-1/3 text-gray-700 font-medium ">Full Name</label>
                       <input 
+                        id="name"
                         type="text" 
+                        className="md:w-2/3 border border-gray-300 rounded px-3 py-1 focus:outline-none focus:ring focus:ring-amber-300"
+                        name="name"
+                        
+                      />
+                    </div>
+          
+                    <div className="flex flex-col md:flex-row md:items-center">
+                      <label for="password" className="md:w-1/3 text-gray-700 font-medium">New Password</label>
+                      <input 
+                        id="password"
+                        type="password" 
+                        name="password"
                         className="md:w-2/3 border border-gray-300 rounded px-3 py-1 focus:outline-none focus:ring focus:ring-amber-300"
                       />
                     </div>
           
                     <div className="flex flex-col md:flex-row md:items-center">
-                      <label className="md:w-1/3 text-gray-700 font-medium">New Password</label>
+                      <label for="confirmPassword"className="md:w-1/3 text-gray-700 font-medium">Retype Password</label>
                       <input 
+                        id="confirmPassword"
+                        name="confirmPassword"
                         type="password" 
                         className="md:w-2/3 border border-gray-300 rounded px-3 py-1 focus:outline-none focus:ring focus:ring-amber-300"
                       />
                     </div>
           
                     <div className="flex flex-col md:flex-row md:items-center">
-                      <label className="md:w-1/3 text-gray-700 font-medium">Retype Password</label>
+                      <label for="usdtAddress" className="md:w-1/3 text-gray-700 font-medium">USDT Address (TRC20)</label>
                       <input 
-                        type="password" 
-                        className="md:w-2/3 border border-gray-300 rounded px-3 py-1 focus:outline-none focus:ring focus:ring-amber-300"
-                      />
-                    </div>
-          
-                    <div className="flex flex-col md:flex-row md:items-center">
-                      <label className="md:w-1/3 text-gray-700 font-medium">USDT Address (TRC20)</label>
-                      <input 
+                        id="usdtAddress"
+                        name="usdtAddress"
                         type="text" 
                         className="md:w-2/3 border border-gray-300 rounded px-3 py-1 focus:outline-none focus:ring focus:ring-amber-300"
                       />
                     </div>
           
                     <div className="flex flex-col md:flex-row md:items-center">
-                      <label className="md:w-1/3 text-gray-700 font-medium">Email Address</label>
+                      <label for="email" className="md:w-1/3 text-gray-700 font-medium">Email Address</label>
                       <input 
+                        id="email"
+                        name="email"
                         type="email" 
                         className="md:w-2/3 border border-gray-300 rounded px-3 py-1 focus:outline-none focus:ring focus:ring-amber-300"
                       />
