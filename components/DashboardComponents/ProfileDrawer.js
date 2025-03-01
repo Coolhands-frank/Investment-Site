@@ -8,7 +8,7 @@ import NavLinks from "./NavLinks";
 export default function ProfileDrawer({ isOpen, onClose }) {
     return (
       <div
-        className={`fixed flex flex-col z-10 top-0 right-full h-full w-1/2 bg-orange-500 text-black transition-transform duration-300 transform ${
+        className={`fixed flex flex-col z-10 top-0 right-full h-full w-2/3 bg-orange-500 text-black transition-transform duration-300 transform ${
           isOpen ? 'translate-x-full' : 'translate-x-0'
         }`}
       >
